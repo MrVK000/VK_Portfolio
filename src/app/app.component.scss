@@ -1,0 +1,469 @@
+.container {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+
+.container::-webkit-scrollbar {
+  width: 5px;
+  background-color: #e1e6ec;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: #2f47ab;
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 38px;
+}
+
+
+.logoImg {
+  width: 4rem;
+  height: auto;
+}
+
+
+.navBar {
+  // width: 100%;
+  // background-color: grey;
+  padding: 0 4rem;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  box-shadow: 0px 10px 20px 0.02px rgba(0, 0, 0, 0.088);
+}
+
+
+.navOptions {
+  margin: 20px;
+  text-decoration: none;
+  color: #ffa500;
+  // transition: all 0.5s;
+  padding: 4px;
+  // border-radius: 4px;
+}
+
+
+.navOptions:hover {
+  // color: aqua;
+  border-bottom: 3px solid #ffa500;
+
+}
+
+
+
+
+
+
+.k {
+  width: [title];
+}
+
+
+// home
+
+.home,
+.about,
+.skills,
+.services,
+.portfolios {
+  // background-color: rgb(162, 173, 173);
+  height: 100vh;
+}
+
+.homeIntroDiv,
+.homeProfileDiv {
+  width: 50%;
+}
+
+// #home .div {
+//   width: 50%;
+// }
+
+.homeIntroDiv {
+  margin-left: 8rem;
+}
+
+.homeGreetingPara {
+  font-size: 28px;
+}
+
+.homeRolePara {
+  font-size: 32px;
+}
+
+.homeNamePara {
+  font-size: 58px;
+}
+
+
+.homeRole {
+  // color: var(--text-color);
+  // color: $UiColor;
+  color: #ffa500;
+  font-size: 32px;
+}
+
+
+.homeIntroPara,
+.aboutPara {
+  margin-top: 6px;
+}
+
+
+.socialLinksDiv {
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+.socialLinkIconWrapper {
+  border: 4px solid #ffa500;
+  border-radius: 100px;
+  padding: 6px;
+  margin: 6px;
+  width: 22px;
+  transition: all 0.3s;
+}
+
+.socialLinkIcon {
+  color: #ffa500;
+  font-size: 20px;
+}
+
+
+
+.socialLinkIconWrapper:hover {
+  background-color: #ffa500;
+
+  .socialLinkIcon {
+    color: #ffffff;
+  }
+}
+
+
+
+
+// .homeIntroPara
+// {
+//   ;
+// }
+
+
+
+
+.homeProfileWrapper,
+.aboutProfileWrapper {
+  width: 28rem;
+  // height: 23rem;
+}
+
+.homeProfile,
+.aboutProfile {
+  width: 100%;
+  height: auto;
+  margin-bottom: 4rem;
+}
+
+
+
+.aboutDiv {
+  margin-right: 8rem;
+}
+
+
+
+.aboutProfileDiv,
+.aboutDiv {
+  width: 50%;
+}
+
+
+
+
+.aboutHeading {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.aboutRole {
+  font-size: 28px;
+}
+
+
+.aboutHeadingSpan,
+.skillsHeadingSpan,
+.socialIcon,
+.contactsSpan,
+.servicesHeadingSpan {
+  color: #ffa500;
+}
+
+
+.readMore {
+  background-color: #ffffff;
+  color: #ffa500;
+  border-radius: 20px;
+  border: 3px solid #ffa500;
+  padding: 5px;
+  transition: all 0.3s;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 20px;
+  width: 8rem;
+}
+
+
+.readMore:hover {
+  background-color: #ffa500;
+  color: #ffffff;
+}
+
+
+
+.skillsHeading {
+  font-size: 38px;
+  margin-top: 4rem;
+  margin-bottom: 20px;
+}
+
+
+
+.skillsSubHeadingDiv {
+  // margin-left: 10%;
+  width: 65%;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+
+
+
+.skillsDiv {
+  border: 4px solid #ffa500;
+  // height: 70vh;
+  width: 60%;
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+
+.skill {
+  // border: 2px solid;
+  padding: 12px;
+}
+
+
+.skillLabelDiv {
+  font-weight: 650;
+}
+
+
+.skillProgressDiv {
+  border: 4px solid #ffa500;
+  height: 18px;
+  margin-top: 8px;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+
+.skillProgressBar {
+  height: 18px;
+  width: 80%;
+  background-color: #ffa500;
+}
+
+
+
+
+
+
+
+.servicesWrapper,
+.portfolioWrapper {
+  width: 80%;
+  padding: 2rem;
+}
+
+
+
+.servicesHeading,
+.portfolioHeading {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 2rem;
+}
+
+
+
+
+
+.service {
+  border: 4px solid #ffa600bb;
+  margin: 18px;
+  border-radius: 20px;
+  width: 20rem;
+  padding: 2rem;
+  transition: box-shadow 0.3s;
+  transition: bottom 0.3s;
+  transition: position 0.3s;
+}
+
+.service:hover {
+  box-shadow: 0px 10px 20px #ffa50030;
+  position: relative;
+  border: 4px solid #ffa500;
+  bottom: 2px;
+}
+
+.serviceIcon {
+  color: #ffa500;
+  font-size: 50px;
+}
+
+
+.serviceIcon,
+.serviceTitle {
+  margin-bottom: 20px;
+}
+
+
+
+
+.portfolio {
+  border: 4px solid #ffa600bb;
+  margin: 18px;
+  border-radius: 20px;
+  width: 20rem;
+  padding: 2rem;
+  transition: box-shadow 0.3s;
+  transition: all 3s;
+  text-align: center;
+  height: 12rem;
+  overflow: hidden;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .portfolioDescription,
+  .portfolioTitle {
+    opacity: 0;
+    transition: all 0.5s;
+  }
+}
+
+.portfolio:hover {
+  box-shadow: 0px 10px 20px #ffa50030;
+  transition: all 0.3s;
+  position: relative;
+  border: 4px solid #ffa500;
+  bottom: 2px;
+  background-image: none !important;
+  background-color: #ffa500 !important;
+
+  .portfolioDescription,
+  .portfolioTitle {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.contacts {
+  height: 100vh;
+}
+
+.contactsWrapper {
+  width: 80%;
+}
+
+.contactsTitle {
+  text-align: center;
+  font-size: 38px;
+}
+
+
+.contactsDiv {
+  height: 28rem;
+  // border: 2px solid;
+  width: 100%;
+  padding: 2rem;
+}
+
+
+.contact {
+  border: 4px solid #ffa500;
+  width: 20rem;
+  // padding: 20px;
+  margin: 20px;
+  height: 8rem;
+  border-radius: 20px;
+}
+
+.contact:hover {
+  box-shadow: 0 0px 10px 10px #ffa50020;
+}
+
+.socialIcon {
+  margin: 20px;
+  font-size: 38px;
+}
+
+
+.socialDescriptionDiv {
+  margin: 20px;
+}
+
+.socialLabel {
+  text-align: start;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 575px) {}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {}
+
+@media screen and (min-width: 768px) and (max-width: 863px) {}
+
+@media screen and (min-width: 864px) and (max-width: 1023px) {}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {}
+
+@media screen and (min-width: 1440px) and (max-width: 1919px) {}
+
+@media screen and (min-width: 1920px) and (max-width: 2559px) {}
+
+@media screen and (min-width: 2560px) and (max-width: 3139px) {}
+
+@media screen and (min-width: 3140px) and (max-width: 3839px) {}
+
+@media screen and (min-width: 3840px) and (max-width: 4519px) {}
+
+@media screen and (min-width: 4520px) and (max-width: 5119px) {}
+
+@media screen and (min-width: 5120px) {}
