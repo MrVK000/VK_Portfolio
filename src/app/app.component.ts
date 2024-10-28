@@ -60,12 +60,12 @@ export class AppComponent {
       link:"",
       description: "I'll check my LinkedIn everyday",
     },
-    {
-      label: "Call",
-      icon: "fa-solid fa-phone",
-      link: "",
-      description:"Keep in touch with me in What's App",
-    },
+    // {
+    //   label: "Call",
+    //   icon: "fa-brands fa-whatsapp",
+    //   link: "",
+    //   description:"Keep in touch with me in What's App",
+    // },
     {
       label: "Mail",
       icon: "fa-solid fa-envelope",
@@ -92,7 +92,7 @@ export class AppComponent {
       proficiency: 85,
     },
     {
-      label: "NodeJs",
+      label: "JAVA(Springboot)",
       proficiency: 60,
     },
   ];
@@ -124,13 +124,13 @@ export class AppComponent {
       description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi impedit, vitae, unde fuga tenetur dolorum iure mollitia est fugiat alias vero aperiam cum, at repudiandae officia maxime non. Illo cum, necessitatibus quia nam dicta consequatur dolore nemo laborum quos rem ipsum. Minima, ex blanditiis? Ea, commodi! Totam nulla sequi dolore.",
     },
     {
-      icon: "fa-solid fa-bug",
-      title: "Bug Fixing",
+      icon: "fa-solid fa-database",
+      title: "Backend Development",
       description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi impedit, vitae, unde fuga tenetur dolorum iure mollitia est fugiat alias vero aperiam cum, at repudiandae officia maxime non. Illo cum, necessitatibus quia nam dicta consequatur dolore nemo laborum quos rem ipsum. Minima, ex blanditiis? Ea, commodi! Totam nulla sequi dolore.",
     },
     {
-      icon: "fa-solid fa-palette",
-      title: "Web Designing",
+      icon: "fa-solid fa-bug",
+      title: "Bug Fixing",
       description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi impedit, vitae, unde fuga tenetur dolorum iure mollitia est fugiat alias vero aperiam cum, at repudiandae officia maxime non. Illo cum, necessitatibus quia nam dicta consequatur dolore nemo laborum quos rem ipsum. Minima, ex blanditiis? Ea, commodi! Totam nulla sequi dolore.",
     },
   ];

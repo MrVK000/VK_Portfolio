@@ -1,12 +1,18 @@
 .container {
   scrollbar-width: none;
   -ms-overflow-style: none;
+  // background-color: #191f37;
 }
 
 .container::-webkit-scrollbar {
   display: none;
 }
 
+.section {
+  // width: 80%;
+  margin-right: 20%;
+  margin-left: 20%;
+}
 
 .container::-webkit-scrollbar {
   width: 5px;
@@ -83,10 +89,6 @@
   width: 50%;
 }
 
-// #home .div {
-//   width: 50%;
-// }
-
 .homeIntroDiv {
   margin-left: 8rem;
 }
@@ -95,18 +97,18 @@
   font-size: 28px;
 }
 
-.homeRolePara {
-  font-size: 32px;
-}
-
 .homeNamePara {
   font-size: 58px;
 }
 
+.homeRolePara {
+  font-size: 32px;
+}
+
+
+
 
 .homeRole {
-  // color: var(--text-color);
-  // color: $UiColor;
   color: #ffa500;
   font-size: 32px;
 }
@@ -147,16 +149,6 @@
     color: #ffffff;
   }
 }
-
-
-
-
-// .homeIntroPara
-// {
-//   ;
-// }
-
-
 
 
 .homeProfileWrapper,
@@ -253,6 +245,7 @@
   width: 60%;
   border-radius: 20px;
   padding: 2rem;
+  margin-bottom: 20px;
 }
 
 
@@ -346,7 +339,7 @@
   width: 20rem;
   padding: 2rem;
   transition: box-shadow 0.3s;
-  transition: all 3s;
+  transition: all 0.3s;
   text-align: center;
   height: 12rem;
   overflow: hidden;
@@ -444,15 +437,570 @@
 
 
 
-@media screen and (max-width: 575px) {}
+@media screen and (max-width: 575px) {
 
-@media screen and (min-width: 576px) and (max-width: 767px) {}
 
-@media screen and (min-width: 768px) and (max-width: 863px) {}
+  .home,
+  .about,
+  .skills,
+  .services,
+  .portfolios {
+    height: auto !important;
+  }
 
-@media screen and (min-width: 864px) and (max-width: 1023px) {}
+  .homeGreetingPara {
+    font-size: 18px;
+  }
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {}
+  .homeNamePara {
+    font-size: 38px;
+  }
+
+  .homeRolePara {
+    font-size: 22px;
+  }
+
+
+  .homeRole {
+    font-size: 22px;
+  }
+
+  .navBar {
+    justify-content: center !important;
+  }
+
+  .navOptionsDiv {
+    display: none;
+  }
+
+  .home {
+    margin-top: 0;
+    flex-direction: column-reverse;
+  }
+
+
+  .homeIntroDiv {
+    margin-left: 0;
+    width: 84%;
+  }
+
+
+  .homeProfileWrapper {
+    width: 18rem;
+    // height: 23rem;
+  }
+
+  .homeProfile {
+    margin-bottom: 2rem;
+  }
+
+  .socialLinksDiv {
+    justify-content: space-between;
+  }
+
+
+  .about {
+    margin-top: 4rem;
+  }
+
+
+  .aboutDiv {
+    margin-right: 0rem;
+  }
+
+
+  .aboutWrapper {
+    text-align: center;
+  }
+
+  .aboutDiv {
+    width: 84%;
+  }
+
+  .aboutProfileDiv {
+    display: none !important;
+  }
+
+
+  .aboutProfile {
+    margin-bottom: 0;
+  }
+
+  .readMoreDiv {
+    justify-content: center;
+  }
+
+  .skills {
+    height: 80vh;
+  }
+
+  .skillsDiv {
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 80%;
+  }
+
+  .skillsSubHeadingDiv {
+    display: none;
+  }
+
+
+  .services {
+    margin-top: 4rem;
+  }
+
+  .servicesDiv {
+    height: auto;
+    // flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .service {
+    width: 100%;
+    text-align: center;
+    margin: 10px 28px;
+    padding: 20px;
+  }
+
+  .servicesWrapper {
+    padding: 0;
+    width: 100%;
+  }
+
+  .servicePara {
+    display: none;
+  }
+
+  .serviceIcon {
+    font-size: 40px;
+  }
+
+  .serviceTitle {
+    margin: 0;
+  }
+
+
+  .portfolios {
+    margin-top: 2rem;
+  }
+
+  .portfolioDiv {
+    flex-direction: column;
+  }
+
+  .portfolio {
+    width: 100%;
+    padding: 10px;
+  }
+
+
+  .portfolioTitle {
+    opacity: 1 !important;
+  }
+
+  .portfolioDescription {
+    display: none;
+  }
+
+  .servicesHeading,
+  .portfolioHeading {
+    margin: 0;
+  }
+
+  .contacts {
+    padding-bottom: 2rem;
+    height: max-content;
+  }
+
+  .contactsDiv {
+    padding: 10px 0;
+    height: auto;
+  }
+
+  .contactsWrapper {
+    width: 90%;
+  }
+
+  .contact {
+    margin: 10px;
+    width: max-content;
+    justify-content: center !important;
+    height: auto;
+    border: none;
+  }
+
+  .socialIcon {
+    margin: 4px;
+  }
+
+  .socialDescriptionDiv {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+  .navBar {
+    justify-content: center !important;
+  }
+
+  .navOptionsDiv {
+    display: none;
+  }
+
+
+  .home,
+  .about,
+  .skills,
+  .services,
+  .portfolios,
+  .contacts,
+  .contactsDiv {
+    height: auto !important;
+  }
+
+  .home {
+    margin-top: 0;
+    flex-direction: column-reverse;
+  }
+
+
+  .homeIntroDiv {
+    margin-left: 0;
+    width: 84%;
+  }
+
+
+  .homeProfileWrapper,
+  .aboutProfileWrapper {
+    width: 18rem;
+    // height: 23rem;
+  }
+
+  .homeProfile {
+    margin-bottom: 2rem;
+  }
+
+
+  .socialLinksDiv {
+    justify-content: space-between;
+  }
+
+
+  .about {
+    flex-direction: column;
+  }
+
+  .aboutWrapper {
+    text-align: center;
+  }
+
+
+  .aboutDiv {
+    margin-right: 0rem;
+  }
+
+
+  .aboutProfileWrapper {
+    width: 10rem;
+    // height: 23rem;
+  }
+
+  .aboutProfileDiv,
+  .aboutDiv {
+    width: 86%;
+  }
+
+
+  .aboutProfile {
+    margin-bottom: 0;
+  }
+
+  .readMoreDiv {
+    justify-content: center;
+  }
+
+
+  .skillsDiv {
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 80%;
+  }
+
+  .skillsSubHeadingDiv {
+    display: none;
+  }
+
+
+  .servicesDiv {
+    height: auto;
+    // flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .servicesWrapper {
+    width: 100%;
+    padding: 18px;
+  }
+
+  .service {
+    width: 100%;
+  }
+
+
+
+  .portfolioDiv {
+    flex-direction: column;
+  }
+
+  .portfolioWrapper {
+    width: 78%;
+  }
+
+  .portfolio {
+    width: 100%;
+  }
+
+  .contacts {
+    margin-bottom: 2rem;
+  }
+
+  .contactsWrapper {
+    width: 88%;
+  }
+
+  .contact {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 863px) {
+
+
+  // .home,
+  // .about,
+  // .skills,
+  // .services,
+  // .portfolios,
+  // .contacts,
+  // .contactsDiv {
+  //   height: auto !important;
+  // }
+
+  .navBar {
+    justify-content: center !important;
+  }
+
+  .navOptionsDiv {
+    display: none;
+  }
+
+  .home {
+    margin-top: 0;
+    flex-direction: column-reverse;
+  }
+
+
+  .homeIntroDiv {
+    margin-left: 0;
+    width: 84%;
+  }
+
+
+  .homeProfileWrapper,
+  .aboutProfileWrapper {
+    width: 18rem;
+    // height: 23rem;
+  }
+
+  .homeProfile {
+    margin-bottom: 2rem;
+  }
+
+
+  .socialLinksDiv {
+    justify-content: space-around;
+  }
+
+  .about {
+    flex-direction: column;
+    height: 70vh;
+  }
+
+
+  .aboutWrapper {
+    text-align: center;
+  }
+
+  .aboutProfile {
+    margin-bottom: 0;
+  }
+
+
+  .aboutDiv {
+    margin-right: 0rem;
+    width: 80%;
+  }
+
+
+  .aboutProfileWrapper {
+    width: 12rem;
+    // height: 23rem;
+  }
+
+  .readMoreDiv {
+    justify-content: center;
+  }
+
+  .skillsDiv {
+    // padding-right: 10px;
+    // padding-left: 10px;
+    width: 70%;
+  }
+
+  .skillsSubHeadingDiv {
+    display: none;
+  }
+
+
+
+  .services {
+    margin-top: 20rem;
+  }
+
+  .servicesDiv {
+    height: auto;
+    // flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .servicesWrapper {
+    width: 84%;
+  }
+
+  .service {
+    width: 80%;
+  }
+
+  .portfolios {
+    margin-top: 20rem;
+  }
+
+  .portfolioDiv {
+    flex-direction: column;
+  }
+
+
+  .portfolio {
+    width: 84%;
+  }
+
+  .contacts {
+    height: max-content;
+    margin-top: 4rem;
+  }
+
+  .contact {
+    width: 100%;
+  }
+
+  .contactsDiv {
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 864px) and (max-width: 1023px) {
+
+  .homeIntroDiv {
+    margin-left: 4rem;
+  }
+
+  .homeProfileWrapper {
+    width: 22rem;
+    // height: 23rem;
+  }
+
+
+  .aboutProfileWrapper {
+    width: 16rem;
+    // height: 23rem;
+  }
+
+  .aboutProfile {
+    margin-bottom: 0;
+  }
+
+
+  .aboutDiv {
+    margin-right: 6rem;
+  }
+
+
+  .aboutProfileWrapper {
+    width: 14rem;
+    // height: 23rem;
+  }
+
+  .servicesDiv {
+    flex-direction: column;
+  }
+
+
+  .services {
+    margin-top: 20rem;
+  }
+
+  .servicesDiv {
+    height: auto;
+    // flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .service {
+    width: 80%;
+  }
+
+  .portfolioWrapper {
+    padding: 0;
+  }
+
+  .portfolio {
+    width: 18rem;
+  }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+
+  .homeIntroDiv {
+    margin-left: 6rem;
+  }
+
+  .aboutProfileWrapper {
+    width: 18rem;
+    // height: 23rem;
+  }
+
+
+
+  .services {
+    margin-top: 20rem;
+  }
+
+  .servicesDiv {
+    height: auto;
+    // flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .service {
+    width: 80%;
+  }
+
+}
 
 @media screen and (min-width: 1440px) and (max-width: 1919px) {}
 
