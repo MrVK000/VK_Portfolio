@@ -45,32 +45,32 @@ export class AppComponent {
     {
       label: "Instagram",
       icon: "fa-brands fa-instagram",
-      link: "",
-      description:"I'm very active in insta, So you can ping me there",
+      link: "https://www.instagram.com/just_call_me_mr.vk/?igsh=azBweTJka3hqZGpt",
+      description: "I'm very active in insta, So you can ping me there",
     },
     {
       label: "Twitter",
       icon: "fa-brands fa-twitter",
-      link: "",
-      description:"You can also reach me at twitter",
+      link: "https://x.com/i/flow/login?redirect_after_login=%2FVaikundamu66901",
+      description: "You can also reach me at twitter",
     },
     {
       label: "LinkedIn",
       icon: "fa-brands fa-linkedin",
-      link:"",
+      link: "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFvVHFMDfj65wAAAZLUzShgWr6O9eimCKVJg-LF4bGE4GWZA7So0CqzvZxcE4kazO4eCBL8UIbC0JWoLm9XVxxBCjGUEfLfq_myoMUIX4iIbNAYtyUZW-8Fnoq4jwgYFZmGcbM=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fvaikundamuthu-n-7aa019248%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app",
       description: "I'll check my LinkedIn everyday",
     },
     // {
     //   label: "Call",
     //   icon: "fa-brands fa-whatsapp",
-    //   link: "",
+    //   link: "7010847086",
     //   description:"Keep in touch with me in What's App",
     // },
     {
       label: "Mail",
       icon: "fa-solid fa-envelope",
-      link: "",
-      description:"You can mail me anytime, I'll be available anytime!",
+      link: `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent('vaikundamuthu1430@gmail.com')}&su=${encodeURIComponent("")}&body=${encodeURIComponent("")}`,
+      description: "You can mail me anytime, I'll be available anytime!",
     },
   ];
 
@@ -146,14 +146,24 @@ export class AppComponent {
   projectsList = [
     {
       title: "Employee Management System",
-      background: "../assets/images/Recoil.avif",
+      background: "../assets/images/project1.jpeg",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, doloremque odit! Assumenda ut quibusdam, dolor, rem modi maxime illo hic autem nisi, sunt sed saepe sapiente quia consequuntur facilis nihil.",
     },
     {
       title: "Theme Park Ticket booking system",
-      background: "../assets/images/Recoil.avif",
+      background: "../assets/images/project1.jpeg",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, doloremque odit! Assumenda ut quibusdam, dolor, rem modi maxime illo hic autem nisi, sunt sed saepe sapiente quia consequuntur facilis nihil.",
     },
+    // {
+    //   title: "Employee Management System",
+    //   background: "../assets/images/project2.jpeg",
+    //   description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, doloremque odit! Assumenda ut quibusdam, dolor, rem modi maxime illo hic autem nisi, sunt sed saepe sapiente quia consequuntur facilis nihil.",
+    // },
+    // {
+    //   title: "Theme Park Ticket booking system",
+    //   background: "../assets/images/project4.jpeg",
+    //   description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, doloremque odit! Assumenda ut quibusdam, dolor, rem modi maxime illo hic autem nisi, sunt sed saepe sapiente quia consequuntur facilis nihil.",
+    // },
   ];
 
 
@@ -180,6 +190,9 @@ export class AppComponent {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
+  openSocialLink(i: number) {
+    window.open(this.socialLinks[i].link, '_blank');
+  }
 
 
 }

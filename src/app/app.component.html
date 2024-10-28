@@ -18,7 +18,7 @@
 
     <!-- <i class="fa-solid fa-phone" style="color: aqua;"></i> -->
 
-<section id="home" class="home flex justify-content-center align-items-center">
+    <section id="home" class="home flex justify-content-center align-items-center">
       <div class="homeIntroDiv flex justify-content-center align-items-center">
 
         <div class="homeIntroWrapper">
@@ -29,7 +29,7 @@
 
           <div class="socialLinksDiv flex">
             <div class="socialLinkIconWrapper cursor-pointer flex justify-content-center align-items-center"
-              *ngFor="let item of socialLinks">
+              *ngFor="let item of socialLinks;let i = index;" (click)="openSocialLink(i)">
               <i class="socialLinkIcon" [class]="item.icon"></i>
             </div>
           </div>
@@ -137,7 +137,7 @@
 
         <div class="contactsDiv flex justify-content-center align-items-center flex-warp">
           <div class="contact flex justify-content-between align-items-center cursor-pointer"
-            *ngFor="let item of socialLinks">
+            *ngFor="let item of socialLinks;let i = index;" (click)="openSocialLink(i)">
             <div class="socialIconDiv">
               <i class="socialIcon" [class]="item.icon"></i>
             </div>
@@ -150,7 +150,7 @@
           </div>
         </div>
       </div>
-    </section> 
+    </section>
 
 
 

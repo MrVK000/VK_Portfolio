@@ -595,6 +595,7 @@
 
 
   .portfolioTitle {
+    // color: #000000;
     opacity: 1 !important;
   }
 
@@ -748,6 +749,13 @@
   }
 
 
+  .portfolioTitle {
+    opacity: 1 !important;
+  }
+
+  .portfolioDescription {
+    display: none;
+  }
 
   .portfolioDiv {
     flex-direction: column;
@@ -772,6 +780,7 @@
   .contact {
     width: 100%;
     margin: 10px 0;
+    justify-content: left !important;
   }
 
 }
@@ -805,7 +814,7 @@
 
   .homeIntroDiv {
     margin-left: 0;
-    width: 84%;
+    width: 80%;
   }
 
 
@@ -893,6 +902,15 @@
   }
 
 
+  .portfolioTitle {
+    opacity: 1 !important;
+  }
+
+  .portfolioDescription {
+    display: none;
+  }
+
+
   .portfolio {
     width: 84%;
   }
@@ -904,6 +922,7 @@
 
   .contact {
     width: 100%;
+    justify-content: left !important;
   }
 
   .contactsDiv {
@@ -966,6 +985,15 @@
     padding: 0;
   }
 
+
+  .portfolioTitle {
+    opacity: 1 !important;
+  }
+
+  .portfolioDescription {
+    display: none;
+  }
+
   .portfolio {
     width: 18rem;
   }
@@ -1002,7 +1030,13 @@
 
 }
 
-@media screen and (min-width: 1440px) and (max-width: 1919px) {}
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+
+  .aboutProfileWrapper {
+    width: 14rem;
+    // height: 23rem;
+  }
+}
 
 @media screen and (min-width: 1920px) and (max-width: 2559px) {}
 
