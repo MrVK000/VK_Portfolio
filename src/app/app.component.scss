@@ -1,3 +1,18 @@
+
+// $color:$UiColor;
+// $color:var(--primary-color);
+
+
+:root {
+  --primary-color: #ffa500; // Default color if not set by TypeScript
+}
+
+.some-class {
+  background-color: var(--primary-color);
+}
+
+
+
 .container {
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -50,7 +65,7 @@
 .navOptions {
   margin: 20px;
   text-decoration: none;
-  color: #ffa500;
+  color: var(--primary-color);
   // transition: all 0.5s;
   padding: 4px;
   // border-radius: 4px;
@@ -59,7 +74,7 @@
 
 .navOptions:hover {
   // color: aqua;
-  border-bottom: 3px solid #ffa500;
+  border-bottom: 3px solid var(--primary-color);
 
 }
 
@@ -109,7 +124,7 @@
 
 
 .homeRole {
-  color: #ffa500;
+  color: var(--primary-color);
   font-size: 32px;
 }
 
@@ -127,7 +142,7 @@
 
 
 .socialLinkIconWrapper {
-  border: 4px solid #ffa500;
+  border: 4px solid var(--primary-color);
   border-radius: 100px;
   padding: 6px;
   margin: 6px;
@@ -136,14 +151,14 @@
 }
 
 .socialLinkIcon {
-  color: #ffa500;
+  color: var(--primary-color);
   font-size: 20px;
 }
 
 
 
 .socialLinkIconWrapper:hover {
-  background-color: #ffa500;
+  background-color: var(--primary-color);
 
   .socialLinkIcon {
     color: #ffffff;
@@ -195,15 +210,15 @@
 .socialIcon,
 .contactsSpan,
 .servicesHeadingSpan {
-  color: #ffa500;
+  color: var(--primary-color);
 }
 
 
 .readMore {
   background-color: #ffffff;
-  color: #ffa500;
+  color: var(--primary-color);
   border-radius: 20px;
-  border: 3px solid #ffa500;
+  border: 3px solid var(--primary-color);
   padding: 5px;
   transition: all 0.3s;
   font-weight: 500;
@@ -214,7 +229,7 @@
 
 
 .readMore:hover {
-  background-color: #ffa500;
+  background-color: var(--primary-color);
   color: #ffffff;
 }
 
@@ -240,7 +255,7 @@
 
 
 .skillsDiv {
-  border: 4px solid #ffa500;
+  border: 4px solid var(--primary-color);
   // height: 70vh;
   width: 60%;
   border-radius: 20px;
@@ -261,7 +276,7 @@
 
 
 .skillProgressDiv {
-  border: 4px solid #ffa500;
+  border: 4px solid var(--primary-color);
   height: 18px;
   margin-top: 8px;
   border-radius: 4px;
@@ -272,7 +287,7 @@
 .skillProgressBar {
   height: 18px;
   width: 80%;
-  background-color: #ffa500;
+  background-color: var(--primary-color);
 }
 
 
@@ -312,14 +327,14 @@
 }
 
 .service:hover {
-  box-shadow: 0px 10px 20px #ffa50030;
+  box-shadow: 0px 10px 20px var(--primary-color)30;
   position: relative;
-  border: 4px solid #ffa500;
+  border: 4px solid var(--primary-color);
   bottom: 2px;
 }
 
 .serviceIcon {
-  color: #ffa500;
+  color: var(--primary-color);
   font-size: 50px;
 }
 
@@ -355,13 +370,13 @@
 }
 
 .portfolio:hover {
-  box-shadow: 0px 10px 20px #ffa50030;
+  box-shadow: 0px 10px 20px var(--primary-color)30;
   transition: all 0.3s;
   position: relative;
-  border: 4px solid #ffa500;
+  border: 4px solid var(--primary-color);
   bottom: 2px;
   background-image: none !important;
-  background-color: #ffa500 !important;
+  background-color: var(--primary-color) !important;
 
   .portfolioDescription,
   .portfolioTitle {
@@ -402,7 +417,7 @@
 
 
 .contact {
-  border: 4px solid #ffa500;
+  border: 4px solid var(--primary-color);
   width: 20rem;
   // padding: 20px;
   margin: 20px;
@@ -411,7 +426,7 @@
 }
 
 .contact:hover {
-  box-shadow: 0 0px 10px 10px #ffa50020;
+  box-shadow: 0 0px 10px 10px var(--primary-color)20;
 }
 
 .socialIcon {

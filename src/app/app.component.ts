@@ -173,7 +173,13 @@ export class AppComponent {
   isVisible: boolean = false;;
 
 
-  UiColor = "#ffa500";
+  UiColor = "red";
+
+  ngOnInit(): void {
+    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+    //Add 'implements OnInit' to the class.
+    document.documentElement.style.setProperty('--primary-color', '#ffa500');
+  }
 
 
   windowReload() {
@@ -192,6 +198,12 @@ export class AppComponent {
 
   openSocialLink(i: number) {
     window.open(this.socialLinks[i].link, '_blank');
+  }
+
+  changeTheme()
+  {
+    console.log(">>>>");
+    
   }
 
 
