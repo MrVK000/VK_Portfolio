@@ -1,0 +1,300 @@
+<div class="container flex justify-content-center align-items-center">
+    <div class="wrapper">
+
+        <div class="navBar flex justify-space-between align-items-center">
+
+            <div class="logoDiv">
+                <h2 class="title cursor-pointer" (click)="windowReload()">{{title}}</h2>
+                <!-- <img class="logoImg cursor-pointer" (click)="windowReload()" src="../assets/images/logo.png" alt="logo"> -->
+            </div>
+
+            <div class="navOptionsDiv">
+                <!-- <p-toggleswitch [(ngModel)]="checked" /> -->
+                <ng-container *ngFor="let item of navOptions">
+                    <a class="navOptions" [href]="item.url">{{item.label}}</a>
+                </ng-container>
+            </div>
+
+        </div>
+
+        <!-- <i class="fa-solid fa-phone" style="color: aqua;"></i> -->
+
+        <section id="home" class="home flex justify-content-center align-items-center">
+            <div class="homeIntroDiv flex justify-content-center align-items-center">
+
+                <div class="homeIntroWrapper">
+                    <p class="homeGreetingPara bold">{{homeGreetingPara}}</p>
+                    <p class="homeNamePara bold">{{homeNamePara}}</p>
+                    <p class="homeRolePara bold">{{homeRolePara}}</p><span class="homeRole">{{role}}</span>
+                    <p class="homeIntroPara indent" [innerHTML]="homeIntroPara"></p>
+
+                    <div class="socialLinksDiv flex">
+                        <div class="socialLinkIconWrapper cursor-pointer flex justify-content-center align-items-center"
+                            *ngFor="let item of socialLinks;let i = index;" (click)="openLink(socialLinks,i)">
+                            <i class="socialLinkIcon" [class]="item.icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="homeProfileDiv flex justify-content-center align-items-center">
+                <div class="homeProfileWrapper">
+                    <img class="homeProfile" src="../assets/images/profile1.1.png" alt="ProfileImg">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about flex justify-content-center align-items-center">
+
+            <div class="aboutProfileDiv flex justify-content-center align-items-center">
+                <div class="aboutProfileWrapper">
+                    <img class="aboutProfile" src="../assets/images/profile3.1.png" alt="ProfileImg">
+                </div>
+            </div>
+
+            <div class="aboutDiv flex justify-content-center align-items-center">
+
+                <div class="aboutWrapper">
+                    <p class="aboutHeading bold">{{about}}<span class="aboutHeadingSpan">{{me}}</span></p>
+                    <p class="aboutRole bold">{{role}}!</p>
+                    <p class="aboutPara indent" [innerHTML]="aboutIntroPara"></p>
+
+                    <div class="readMoreDiv flex">
+                        <button class="readMore cursor-pointer"
+                            (click)="showTheDialog('About Me',aboutIntroModalContent,0,false)">{{readMore}}</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="skills" class="skills flex justify-content-center align-items-center flex-column">
+            <h2 class="skillsHeading">{{my}}<span class="skillsHeadingSpan">{{skills}}</span></h2>
+            <div class="skillsWrapperv w-full flex justify-content-center align-items-center flex-column">
+                <div *ngIf="false" class="skillsSubHeadingDiv">
+                    <label for="skills" class="skillsSubHeading">{{codingSkills}}</label>
+                </div>
+
+                <div class="skillsDiv">
+                    <div class="skill" *ngFor="let item of skillsList">
+                        <div class="skillLabelDiv flex align-items-center justify-space-between">
+                            <p class="skillLabel">{{item.label}}</p>
+                            <p class="skillPercentage">{{item.proficiency}}%</p>
+                        </div>
+                        <div class="skillProgressDiv flex align-items-center">
+                            <div class="skillProgressBar" [ngStyle]="{'width':item.proficiency+'%'}"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="services" class="services flex justify-content-center align-items-center ">
+            <div class="servicesWrapper">
+                <div class="servicesHeadingDiv">
+                    <h2 class="servicesHeading">{{my}}<span class="servicesHeadingSpan">{{services}}</span></h2>
+                </div>
+                <div class="servicesDiv flex justify-content-center align-items-center">
+                    <div class="service flex align-items-center flex-column cursor-pointer"
+                        *ngFor="let item of servicesLists;let i = index">
+                        <i class="serviceIcon" [class]="item.icon"></i>
+                        <h2 class="serviceTitle">{{item.title}}</h2>
+                        <p class="servicePara indent" [innerHTML]="item.description">{{item.description}}</p>
+                        <div class="readMoreDiv flex">
+                            <button class="readMore cursor-pointer"
+                                (click)="showTheDialog('My Service',servicesLists,i,false)">{{readMore}}</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="portfolios" class="portfolios flex justify-content-center align-items-center">
+            <div class="portfolioWrapper">
+
+                <div class="portfolioHeadingDiv">
+                    <h2 class="portfolioHeading">{{latest}}<span class="servicesHeadingSpan">{{projects}}</span></h2>
+                </div>
+
+                <div class="portfolioDiv flex justify-content-center align-items-center">
+                    <div class="portfolio flex justify-content-center align-items-center flex-column cursor-pointer"
+                        *ngFor="let item of projectsList;let i = index"
+                        [ngStyle]="{'background-image':'url('+item.background+')'}">
+                        <h2 class="portfolioTitle">{{item.title}}</h2>
+                        <!-- <p class="portfolioDescription indent">{{item.description}}</p> -->
+                        <div class="readMoreDiv flex">
+                            <button class="readMore cursor-pointer"
+                                (click)="showTheDialog('My Service',projectsList,i,true)">{{readMore}}</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="contacts" class="contacts flex justify-content-center align-items-center">
+            <div class="contactsWrapper flex justify-content-center align-items-center flex-column ">
+                <div class="contactsTitle">
+                    <h2 class="contactsTitle">{{contact}} <span class="contactsSpan">{{me}}</span></h2>
+                </div>
+
+                <div class="contactFormWrapper flex justify-content-center">
+                    <div class="contactForm" [formGroup]="form">
+
+                        <div class="flex justify-space-between inputFieldWrapper">
+                            <div>
+                                <!-- <div>
+                  <label for="name">Name</label>
+                </div> -->
+                                <div>
+                                    <input class="textField" type="text" placeholder="Name" formControlName="name">
+
+                                    <div
+                                        [ngClass]="getControl('name')?.invalid && getControl('name')?.touched ? 'showError':'hideError'">
+                                        <p class="error" *ngIf="getControl('name')?.errors?.['required']">Name is
+                                            required</p>
+                                    </div>
+                                </div>
+
+
+                                <!-- <div>
+                  <label for="phoneNumber">Phone Number</label>
+                </div> -->
+                                <div>
+                                    <input class="textField" type="text" placeholder="Mobile Number"
+                                        formControlName="mobileNumber">
+
+                                    <div
+                                        [ngClass]="getControl('mobileNumber')?.invalid && getControl('mobileNumber')?.touched ? 'showError':'hideError'">
+                                        <p class="error" *ngIf="getControl('mobileNumber')?.errors?.['required']">Mobile
+                                            number is required
+                                        </p>
+                                        <p class="error"
+                                            *ngIf="getControl('mobileNumber')?.errors?.['pattern'] || getControl('mobileNumber')?.errors?.['minlength']">
+                                            Please enter a valid
+                                            mobile number</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div>
+                                <!-- <div>
+                  <label for="email">E-mail</label>
+                </div> -->
+                                <div>
+                                    <input class="textField" type="text" placeholder="Email Address"
+                                        formControlName="emailAddress">
+
+                                    <div
+                                        [ngClass]="getControl('emailAddress')?.invalid && getControl('emailAddress')?.touched ? 'showError':'hideError'">
+                                        <p class="error" *ngIf="getControl('emailAddress')?.errors?.['required']">Email
+                                            is required</p>
+                                        <p class="error" *ngIf="getControl('emailAddress')?.errors?.['email']">Please
+                                            enter a valid email
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- <div>
+                  <label for="email">E-mail</label>
+                </div> -->
+                                <div>
+                                    <input class="textField" type="text" placeholder="Subject"
+                                        formControlName="subject">
+
+                                    <div
+                                        [ngClass]="getControl('subject')?.invalid && getControl('subject')?.touched ? 'showError':'hideError'">
+                                        <p class="error" *ngIf="getControl('subject')?.errors?.['required']">Subject is
+                                            required</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <!-- <div>
+                <label for="message">Message</label>
+              </div> -->
+                        <div>
+                            <textarea class="messageBox" type="text" placeholder="Your Message"
+                                formControlName="message"></textarea>
+
+                            <div
+                                [ngClass]="getControl('message')?.invalid && getControl('message')?.touched?'showError':'hideError'">
+                                <p class="error" *ngIf="getControl('message')?.errors?.['required']">Message is required
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="submitButtonDiv flex justify-content-center">
+                            <button class="submitButton cursor-pointer" type="submit" (click)="onFormSubmit()">Send
+                                Message <span><i class="buttonIcon pi pi-send"></i></span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div *ngIf="false" class="contactsDiv flex justify-content-center align-items-center flex-warp">
+                    <div class="contact flex justify-content-between align-items-center cursor-pointer"
+                        *ngFor="let item of socialLinks;let i = index;" (click)="openLink(socialLinks,i)">
+                        <div class="socialIconDiv">
+                            <i class="socialIcon" [class]="item.icon"></i>
+                        </div>
+                        <div class="socialDescriptionDiv flex justify-content-center align-items-center flex-column">
+                            <div class="socialLabelDiv w-full flex justify-content-start align-items-center">
+                                <h2 class="socialLabel">{{item.label == "Call" ? "WhatsApp" : item.label}}</h2>
+                            </div>
+                            <div class="socialDescription">{{item.description}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- <p-speeddial [model]="speedDialOptions" [tooltipOptions]="{ tooltipPosition: 'left' }" direction="down" [style]="{ position: 'absolute', left: 'calc(50% - 2rem)', top: 0 }" /> -->
+
+
+
+
+
+        <!-- app.component.html -->
+        <p-speeddial [model]="speedDialOptions" [tooltipOptions]="{ tooltipPosition: 'left' }" direction="down"
+            [style]="{ position: 'absolute', left: 'calc(50% - 2rem)', bottom: '20px', zIndex: 9999 }" />
+        <p-speeddial [model]="speedDialOptions" [tooltipOptions]="{ tooltipPosition: 'left' }" direction="down"
+            [style]="{ position: 'absolute', left: 'calc(50% - 2rem)', bottom: '20px', zIndex: 999999, opacity: 1, visibility: 'visible',width:'2em',height:'20em' }" />
+
+        <p-speeddial [model]="speedDialOptions" [tooltipOptions]="{ tooltipPosition: 'left' }" direction="down"
+            [style]="{ position: 'absolute', left: '50%', bottom: '20px', zIndex: 9999, backgroundColor: 'red' }" />
+
+
+    </div>
+</div>
+<!-- <p-button (click)="showDialog()" label="Show" /> -->
+<p-dialog [header]="dialogTitle" [modal]="true" [(visible)]="showDialog" [style]="{ width: '50vw' }"
+    [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }" [draggable]="false" [resizable]="false">
+    <div class="dialogContent indent">
+        <p [innerHTML]="dialogContent"></p>
+
+    </div>
+    <div class="flex justify-content-center visitDiv" *ngIf="isLinkAvailable">
+        <button class="linkButton" (click)="openLink(projectsList,linkIndex)">Visit <i
+                class="fa-solid fa-arrow-up-right-from-square"></i></button>
+    </div>
+</p-dialog>
+<!-- <p-speeddial [model]="items" direction="up" [style]="{ position: 'absolute', left: 'calc(50% - 2rem)', bottom: 0 }" /> -->
+<!-- <p-speeddial [model]="items" direction="left" [style]="{ position: 'absolute', top: 'calc(50% - 2rem)', right: 0 }" />
+<p-speeddial [model]="items" direction="right" [style]="{ position: 'absolute', top: 'calc(50% - 2rem)', left: 0 }" /> -->
+
+<!-- <p-scrollTop></p-scrollTop> -->

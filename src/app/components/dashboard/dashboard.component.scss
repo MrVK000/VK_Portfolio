@@ -1,0 +1,1325 @@
+// $color:$UiColor;
+// $color:var(--primary-color);
+
+
+:root {
+  --primary-color: #ffa500; // Default color if not set by TypeScript
+}
+
+.some-class {
+  background-color: var(--primary-color);
+}
+
+
+
+.container {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  // background-color: #191f37;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.section {
+  // width: 80%;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.container::-webkit-scrollbar {
+  width: 5px;
+  background-color: #e1e6ec;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: #2f47ab;
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 38px;
+}
+
+
+.logoImg {
+  width: 4rem;
+  height: auto;
+}
+
+
+.navBar {
+  // width: 100%;
+  // background-color: grey;
+  padding: 0 4rem;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  box-shadow: 0px 10px 20px 0.02px rgba(0, 0, 0, 0.088);
+}
+
+
+.navOptions {
+  margin: 20px;
+  text-decoration: none;
+  color: var(--primary-color);
+  // transition: all 0.5s;
+  padding: 4px;
+  // border-radius: 4px;
+}
+
+
+.navOptions:hover {
+  // color: aqua;
+  border-bottom: 3px solid var(--primary-color);
+
+}
+
+
+
+
+
+
+.k {
+  width: [title];
+}
+
+
+// home
+
+.home,
+.about,
+.skills,
+.services,
+.portfolios {
+  // background-color: rgb(162, 173, 173);
+  height: 100vh;
+}
+
+.homeIntroDiv,
+.homeProfileDiv {
+  width: 50%;
+}
+
+.homeIntroDiv {
+  margin-left: 8rem;
+}
+
+.homeGreetingPara {
+  font-size: 28px;
+}
+
+.homeNamePara {
+  font-size: 58px;
+}
+
+.homeRolePara {
+  font-size: 32px;
+}
+
+
+
+
+.homeRole {
+  color: var(--primary-color);
+  font-size: 32px;
+}
+
+
+.homeIntroPara,
+.aboutPara {
+  margin-top: 6px;
+}
+
+
+.socialLinksDiv {
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+.socialLinkIconWrapper {
+  border: 4px solid var(--primary-color);
+  border-radius: 100px;
+  padding: 6px;
+  margin: 6px;
+  width: 40px;
+  transition: all 0.3s;
+}
+
+.socialLinkIcon {
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+
+
+.socialLinkIconWrapper:hover {
+  background-color: var(--primary-color);
+
+  .socialLinkIcon {
+    color: #ffffff;
+  }
+}
+
+
+.homeProfileWrapper,
+.aboutProfileWrapper {
+  width: 28rem;
+  // height: 23rem;
+}
+
+.homeProfile,
+.aboutProfile {
+  width: 100%;
+  height: auto;
+  margin-bottom: 4rem;
+}
+
+
+
+.aboutDiv {
+  margin-right: 8rem;
+}
+
+
+
+.aboutProfileDiv,
+.aboutDiv {
+  width: 50%;
+}
+
+
+
+
+.aboutHeading {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.aboutRole {
+  font-size: 26px;
+}
+
+
+.aboutHeadingSpan,
+.skillsHeadingSpan,
+.socialIcon,
+.contactsSpan,
+.servicesHeadingSpan {
+  color: var(--primary-color);
+}
+
+
+.readMore {
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  border: 3px solid var(--primary-color);
+  padding: 5px;
+  transition: all 0.3s;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 20px;
+  width: 8rem;
+  color: #ffffff;
+}
+
+
+.readMore:hover {
+  background-color: #ffffff;
+  color: var(--primary-color);
+}
+
+
+
+.skillsHeading {
+  font-size: 38px;
+  margin-top: 4rem;
+  margin-bottom: 20px;
+}
+
+
+
+.skillsSubHeadingDiv {
+  // margin-left: 10%;
+  width: 65%;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+
+
+
+.skillsDiv {
+  border: 4px solid var(--primary-color);
+  // height: 70vh;
+  width: 60%;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 20px;
+}
+
+
+.skill {
+  // border: 2px solid;
+  padding: 12px;
+}
+
+
+.skillLabelDiv {
+  font-weight: 650;
+}
+
+
+.skillProgressDiv {
+  border: 4px solid var(--primary-color);
+  height: 28px;
+  margin-top: 8px;
+  border-radius: 4px;
+  padding: 3px;
+}
+
+
+.skillProgressBar {
+  height: 14px;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+
+
+
+
+
+
+.servicesWrapper,
+.portfolioWrapper {
+  width: 80%;
+  padding: 2rem;
+}
+
+
+
+.servicesHeading,
+.portfolioHeading {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 2rem;
+}
+
+
+
+
+
+.service {
+  border: 4px solid #ffa600bb;
+  margin: 18px;
+  border-radius: 20px;
+  width: 24rem;
+  min-width: 24rem;
+  height: 24rem;
+  padding: 2rem;
+  transition: box-shadow 0.3s;
+  transition: bottom 0.3s;
+  transition: position 0.3s;
+}
+
+.service:hover,
+.portfolio:hover {
+  box-shadow: 0px 0px 5px var(--primary-color);
+  position: relative;
+  border: 4px solid var(--primary-color);
+  bottom: 2px;
+}
+
+.serviceIcon {
+  color: var(--primary-color);
+  font-size: 50px;
+}
+
+
+.serviceIcon,
+.serviceTitle {
+  margin-bottom: 20px;
+}
+
+.servicePara {
+  height: 8em;
+}
+
+
+
+
+.portfolio {
+  border: 4px solid #ffa600bb;
+  margin: 18px;
+  border-radius: 20px;
+  width: 20rem;
+  padding: 2rem;
+  transition: box-shadow 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  height: 14rem;
+  overflow: hidden;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.portfoli:hover {
+  box-shadow: 0px 10px 20px var(--primary-color)30;
+  transition: all 0.3s;
+  position: relative;
+  border: 4px solid var(--primary-color);
+  bottom: 2px;
+}
+
+.portfolioTitle {
+  height: 4em;
+}
+
+
+
+
+
+
+
+
+
+.contacts {
+  height: 100vh;
+}
+
+.contactsWrapper {
+  width: 80%;
+}
+
+.contactsTitle {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+
+.contactsDiv {
+  height: 28rem;
+  // border: 2px solid;
+  width: 100%;
+  padding: 2rem;
+}
+
+
+.contact {
+  border: 4px solid var(--primary-color);
+  width: 20rem;
+  // padding: 20px;
+  margin: 20px;
+  height: 8rem;
+  border-radius: 20px;
+}
+
+.contact:hover {
+  box-shadow: 0 0px 10px 10px var(--primary-color)20;
+}
+
+.contactFormWrapper {
+  width: 100%;
+}
+
+.contactForm {
+  width: fit-content;
+}
+
+.textField,
+.messageBox {
+  margin-top: 20px;
+  border: 3px solid #ffa500;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+// .textField::after {
+//   margin-bottom: 2rem;
+//   border: 2px solid #ffa500;
+//   padding: 8px;
+//   border-radius: 4px;
+//   width: 100%;
+// }
+
+.messageBox {
+  // width: 97%;
+  // min-width: 97%;
+  // max-width: 97%;
+  min-height: 15vh;
+  max-height: 25vh;
+  // width: 40em;
+}
+
+.error {
+  color: #ff0000;
+  font-size: smaller;
+}
+
+.showError {
+  visibility: visible;
+  height: 20px;
+}
+
+.hideError {
+  visibility: hidden;
+  height: 20px;
+}
+
+.submitButtonDiv {
+  margin-top: 12px;
+}
+
+.linkButton,
+.submitButton {
+  padding: 12px;
+  border-radius: 38px;
+  border: 2px solid #ffa500;
+  background-color: #ffa500;
+  color: #ffffff;
+  font-size: 16px;
+  // height: 3em;
+  width: 10em;
+}
+
+.linkButton:hover,
+.submitButton:hover {
+  transition: all 0.3s;
+  box-shadow: 0 0 10px #ffa500;
+}
+
+.linkButton {
+  width: 6em;
+  padding: 8px;
+  margin-bottom: 2em;
+}
+
+.buttonIcon {
+  position: relative;
+  top: 2px;
+}
+
+.socialIcon {
+  margin: 20px;
+  font-size: 38px;
+}
+
+
+.socialDescriptionDiv {
+  margin: 20px;
+}
+
+.socialLabel {
+  text-align: start;
+}
+
+
+::ng-deep .p-toast .p-toast-message-content {
+  height: 3em;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+::ng-deep .p-toast .p-toast-message.p-toast-message-error .p-toast-message-icon,
+::ng-deep .p-toast .p-toast-message.p-toast-message-error .p-toast-icon-close {
+  display: none !important;
+}
+
+
+::ng-deep .p-toast-top-right {
+  top: 60px;
+  width: 22em;
+}
+
+::ng-deep .p-dialog .p-dialog-header {
+  padding: 20px;
+}
+
+.dialogContent {
+  padding: 20px;
+  padding-top: 0;
+}
+
+.dialogContent span {
+  width: 2em;
+}
+
+
+:host ::ng-deep {
+  .speeddial-linear-demo {
+    .p-speeddial-direction-up {
+      left: calc(50% - 2rem);
+      bottom: 0;
+    }
+
+    .p-speeddial-direction-down {
+      left: calc(50% - 2rem);
+      top: 0;
+    }
+
+    .p-speeddial-direction-left {
+      right: 0;
+      top: calc(50% - 2rem);
+    }
+
+    .p-speeddial-direction-right {
+      left: 0;
+      top: calc(50% - 2rem);
+    }
+  }
+}
+
+
+@media screen and (max-width: 575px) {
+
+
+  .home,
+  .about,
+  .skills,
+  .services,
+  .portfolios {
+    height: auto !important;
+  }
+
+  .homeGreetingPara {
+    font-size: 18px;
+  }
+
+  .homeNamePara {
+    font-size: 38px;
+  }
+
+  .homeRolePara {
+    font-size: 22px;
+  }
+
+
+  .homeRole {
+    font-size: 22px;
+  }
+
+  .navBar {
+    justify-content: center !important;
+  }
+
+  .navOptionsDiv {
+    display: none;
+  }
+
+  .home {
+    margin-top: 0;
+    flex-direction: column-reverse;
+  }
+
+
+  .homeIntroDiv {
+    margin-left: 0;
+    width: 84%;
+  }
+
+
+  .homeProfileWrapper {
+    width: 18rem;
+    // height: 23rem;
+  }
+
+  .homeProfile {
+    margin-bottom: 2rem;
+  }
+
+  .socialLinksDiv {
+    justify-content: space-between;
+  }
+
+
+  .about {
+    margin-top: 4rem;
+  }
+
+
+  .aboutDiv {
+    margin-right: 0rem;
+  }
+
+
+  .aboutWrapper {
+    text-align: center;
+  }
+
+  .aboutDiv {
+    width: 84%;
+  }
+
+  .aboutProfileDiv {
+    display: none !important;
+  }
+
+
+  .aboutProfile {
+    margin-bottom: 0;
+  }
+
+  .readMoreDiv {
+    justify-content: center;
+  }
+
+  .skills {
+    height: 80vh;
+  }
+
+  .skillsDiv {
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 80%;
+  }
+
+  .skillsSubHeadingDiv {
+    display: none;
+  }
+
+
+  .services {
+    margin-top: 4rem;
+  }
+
+  .servicesDiv {
+    height: auto;
+    // flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .service {
+    width: 100%;
+    min-width: 10rem;
+    text-align: center;
+    margin: 10px 28px;
+    padding: 20px;
+    height: 12rem;
+    height: fit-content;
+  }
+
+  .servicesWrapper {
+    padding: 0;
+    width: 100%;
+  }
+
+  .servicePara {
+    display: none;
+  }
+
+  .serviceIcon {
+    font-size: 40px;
+  }
+
+  .serviceTitle {
+    margin: 0;
+  }
+
+
+  .portfolios {
+    margin-top: 2rem;
+  }
+
+  .portfolioDiv {
+    flex-direction: column;
+  }
+
+  .portfolio {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .servicesHeading,
+  .portfolioHeading {
+    margin: 0;
+  }
+
+  .contacts {
+    padding-bottom: 2rem;
+    height: max-content;
+  }
+
+  .contactsDiv {
+    padding: 10px 0;
+    height: auto;
+  }
+
+  .contactsWrapper {
+    width: 90%;
+  }
+
+  .contact {
+    margin: 10px;
+    width: max-content;
+    justify-content: center !important;
+    height: auto;
+    border: none;
+  }
+
+  // .contactForm {
+  //   width: 18em;
+  // }
+
+  .textField {
+    width: 16.7rem;
+  }
+
+  .messageBox {
+    width: 20em;
+    min-width: 20em;
+    max-width: 20em;
+  }
+
+  .inputFieldWrapper {
+    flex-direction: column;
+  }
+
+  .socialIcon {
+    margin: 4px;
+  }
+
+  .socialDescriptionDiv {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+  .navBar {
+    justify-content: center !important;
+  }
+
+  .navOptionsDiv {
+    display: none;
+  }
+
+
+  .home,
+  .about,
+  .skills,
+  .services,
+  .portfolios,
+  .contacts,
+  .contactsDiv {
+    height: auto !important;
+  }
+
+  .home {
+    margin-top: 0;
+    flex-direction: column-reverse;
+  }
+
+
+  .homeIntroDiv {
+    margin-left: 0;
+    width: 84%;
+  }
+
+
+  .homeProfileWrapper,
+  .aboutProfileWrapper {
+    width: 18rem;
+    // height: 23rem;
+  }
+
+  .homeProfile {
+    margin-bottom: 2rem;
+  }
+
+
+  .socialLinksDiv {
+    justify-content: space-between;
+  }
+
+
+  .about {
+    flex-direction: column;
+  }
+
+  .aboutWrapper {
+    text-align: center;
+  }
+
+
+  .aboutDiv {
+    margin-right: 0rem;
+  }
+
+
+  .aboutProfileWrapper {
+    width: 10rem;
+    // height: 23rem;
+  }
+
+  .aboutProfileDiv,
+  .aboutDiv {
+    width: 86%;
+  }
+
+
+  .aboutProfile {
+    margin-bottom: 0;
+  }
+
+  .readMoreDiv {
+    justify-content: center;
+  }
+
+
+  .skillsDiv {
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 80%;
+  }
+
+  .skillsSubHeadingDiv {
+    display: none;
+  }
+
+
+  .servicesDiv {
+    height: auto;
+    // flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .servicesWrapper {
+    width: 100%;
+    padding: 18px;
+  }
+
+  .service {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .servicePara {
+    height: fit-content;
+  }
+
+  .portfolioDiv {
+    flex-direction: column;
+  }
+
+  .portfolioWrapper {
+    width: 78%;
+  }
+
+  .portfolio {
+    width: 100%;
+  }
+
+  .contacts {
+    margin-bottom: 2rem;
+  }
+
+  .contactsWrapper {
+    width: 88%;
+  }
+
+  .contact {
+    width: 100%;
+    margin: 10px 0;
+    justify-content: left !important;
+  }
+
+  // .contactForm {
+  //   width: 36em;
+  // }
+
+  .textField {
+    width: 32.5rem;
+  }
+
+  .messageBox {
+    width: 39em;
+    min-width: 39em;
+    max-width: 39em;
+  }
+
+  .inputFieldWrapper {
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 863px) {
+
+
+  // .home,
+  // .about,
+  // .skills,
+  // .services,
+  // .portfolios,
+  // .contacts,
+  // .contactsDiv {
+  //   height: auto !important;
+  // }
+
+  .navBar {
+    justify-content: center !important;
+  }
+
+  .navOptionsDiv {
+    display: none;
+  }
+
+  .home {
+    margin-top: 0;
+    flex-direction: column-reverse;
+  }
+
+
+  .homeIntroDiv {
+    margin-left: 0;
+    width: 80%;
+  }
+
+
+  .homeProfileWrapper,
+  .aboutProfileWrapper {
+    width: 18rem;
+    // height: 23rem;
+  }
+
+  .homeProfile {
+    margin-bottom: 2rem;
+  }
+
+
+  .socialLinksDiv {
+    justify-content: space-around;
+  }
+
+  .about {
+    flex-direction: column;
+    height: 70vh;
+  }
+
+
+  .aboutWrapper {
+    text-align: center;
+  }
+
+  .aboutProfile {
+    margin-bottom: 0;
+  }
+
+
+  .aboutDiv {
+    margin-right: 0rem;
+    width: 80%;
+  }
+
+
+  .aboutProfileWrapper {
+    width: 12rem;
+    // height: 23rem;
+  }
+
+  .readMoreDiv {
+    justify-content: center;
+  }
+
+  .skillsDiv {
+    // padding-right: 10px;
+    // padding-left: 10px;
+    width: 70%;
+  }
+
+  .skillsSubHeadingDiv {
+    display: none;
+  }
+
+
+
+  .services {
+    margin-top: 20rem;
+  }
+
+  .servicesDiv {
+    height: auto;
+    // flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .servicesWrapper {
+    width: 84%;
+  }
+
+  .service {
+    width: 80%;
+    height: fit-content;
+  }
+
+  .servicePara {
+    height: fit-content;
+  }
+
+  .portfolios {
+    margin-top: 20rem;
+  }
+
+  .portfolioDiv {
+    flex-direction: column;
+  }
+
+  .portfolio {
+    width: 84%;
+  }
+
+  .contacts {
+    height: max-content;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .contact {
+    width: 100%;
+    justify-content: left !important;
+  }
+
+  .contactsDiv {
+    height: auto;
+  }
+
+  .textField {
+    width: 39rem;
+  }
+
+  .messageBox {
+    width: 47em;
+    min-width: 47em;
+    max-width: 147em;
+  }
+
+  .inputFieldWrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 864px) and (max-width: 1023px) {
+
+  .homeIntroDiv {
+    margin-left: 4rem;
+  }
+
+  .homeProfileWrapper {
+    width: 22rem;
+    // height: 23rem;
+  }
+
+
+  .aboutProfileWrapper {
+    width: 36rem;
+    // height: 23rem;
+  }
+
+  .aboutProfile {
+    margin-bottom: 0;
+  }
+
+
+  .aboutDiv {
+    margin-right: 6rem;
+  }
+
+
+  .servicesDiv {
+    flex-direction: column;
+  }
+
+
+  .services {
+    margin-top: 10rem;
+    padding-top: 5rem;
+    height: auto;
+  }
+
+  .servicesDiv {
+    height: auto;
+    // flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .service {
+    width: 80%;
+    height: fit-content;
+  }
+
+  .servicePara {
+    height: fit-content;
+  }
+
+  .portfolioWrapper {
+    padding: 0;
+  }
+
+  .portfolio {
+    width: 18rem;
+  }
+
+
+
+  .textField {
+    width: 18rem;
+  }
+
+  .messageBox {
+    width: 46.5em;
+    min-width: 46.5em;
+    max-width: 46.5em;
+  }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+
+  .homeIntroDiv {
+    margin-left: 6rem;
+  }
+
+  .aboutProfileWrapper {
+    width: 28rem;
+    // height: 23rem;
+  }
+
+
+
+  .services {
+    margin-top: 10rem;
+    padding-top: 10rem;
+    margin-bottom: 5rem;
+  }
+
+  .servicesDiv {
+    height: auto;
+    // flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .service {
+    width: 80%;
+    height: fit-content;
+  }
+
+  .servicePara {
+    height: fit-content;
+  }
+
+  .textField {
+    width: 18rem;
+  }
+
+  .messageBox {
+    width: 46.5em;
+    min-width: 46.5em;
+    max-width: 46.5em;
+  }
+
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+
+  .aboutProfileWrapper {
+    width: 28rem;
+    // height: 23rem;
+  }
+
+  .textField {
+    width: 18rem;
+  }
+
+  .messageBox {
+    width: 46.5em;
+    min-width: 46.5em;
+    max-width: 46.5em;
+  }
+}
+
+@media screen and (min-width: 1920px) and (max-width: 2559px) {
+
+  .textField {
+    width: 18rem;
+  }
+
+  .messageBox {
+    width: 46.5em;
+    min-width: 46.5em;
+    max-width: 46.5em;
+  }
+}
+
+@media screen and (min-width: 2560px) and (max-width: 3139px) {
+
+  .textField {
+    width: 18rem;
+  }
+
+  .messageBox {
+    width: 46.5em;
+    min-width: 46.5em;
+    max-width: 46.5em;
+  }
+}
+
+@media screen and (min-width: 3140px) and (max-width: 3839px) {
+
+  .textField {
+    width: 18rem;
+  }
+
+  .messageBox {
+    width: 46.5em;
+    min-width: 46.5em;
+    max-width: 46.5em;
+  }
+}
+
+@media screen and (min-width: 3840px) and (max-width: 4519px) {
+
+  .textField {
+    width: 18rem;
+  }
+
+  .messageBox {
+    width: 46.5em;
+    min-width: 46.5em;
+    max-width: 46.5em;
+  }
+}
+
+@media screen and (min-width: 4520px) and (max-width: 5119px) {
+
+  .textField {
+    width: 18rem;
+  }
+
+  .messageBox {
+    width: 46.5em;
+    min-width: 46.5em;
+    max-width: 46.5em;
+  }
+}
+
+@media screen and (min-width: 5120px) {
+
+  .textField {
+    width: 18rem;
+  }
+
+  .messageBox {
+    width: 46.5em;
+    min-width: 46.5em;
+    max-width: 46.5em;
+  }
+}

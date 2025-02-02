@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import "primeicons/primeicons.css";
+
 * {
   margin: 0;
   padding: 0;
@@ -38,8 +40,6 @@
   flex-wrap: wrap !important;
 }
 
-
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -48,18 +48,14 @@
   font-weight: 500;
 }
 
-
 .w-full {
   width: 100%;
 }
-
 
 .indent {
   text-indent: 2rem;
   text-align: justify;
 }
-
-
 
 .foodDiv::-webkit-scrollbar {
   width: 5px;
