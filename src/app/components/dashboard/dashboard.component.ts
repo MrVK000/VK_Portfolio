@@ -246,18 +246,8 @@ export class DashboardComponent {
   constructor(private sharedService: SharedService, private api: ApiService, private messageService: MessageService) { }
 
   ngOnInit(): void {
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.
     document.documentElement.style.setProperty('--primary-color', '#ffa500');
-    // this.sharedService.isLoading.next(true);
-    // this.showDialog=true;
-    setTimeout(() => {
-      // this.showDialog = !true;
-      // this.sharedService.isLoading.next(false);
-      // this.messageService.add({ severity: 'error', detail: 'I got your details, will reach you out shortly', life: 10000000 });
-    }, 20000)
   }
-
 
   windowReload(): void {
     window.location.reload();
@@ -269,7 +259,6 @@ export class DashboardComponent {
 
   changeTheme(): void {
     console.log(">>>>");
-
   }
 
   showTheDialog(title: string, data: any, i: number, isLinkAvailable: boolean): void {
@@ -286,9 +275,7 @@ export class DashboardComponent {
       this.dialogContent = data;
       this.isLinkAvailable = isLinkAvailable;
     }
-
   }
-
 
   getControl(controlName: string): AbstractControl<any, any> | null {
     return this.form.get(controlName);
@@ -307,7 +294,7 @@ export class DashboardComponent {
       this.subs = this.api.sendContactDetails(payload).subscribe({
         next: (res: any) => {
           this.sharedService.isLoading.next(false);
-          // this.form.reset();
+          this.form.reset();
           // console.log(">>> res", res);
           this.messageService.add({ severity: 'success', detail: `I've got your details, will reach you out shortly` });
         },
@@ -322,8 +309,6 @@ export class DashboardComponent {
       this.form.markAsDirty();
     }
     // console.log(">>> form", this.form.value);
-    // this.isLoading = false;
-
   }
 
   ngOnDestroy(): void {
