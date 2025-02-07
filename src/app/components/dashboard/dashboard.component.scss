@@ -533,6 +533,15 @@
   display: none !important;
 }
 
+::ng-deep .p-icon-wrapper {
+  width: 20px !important;
+}
+
+::ng-deep .p-toast .p-toast-message.p-toast-message-info .p-toast-message-icon {
+  height: 35px !important;
+  margin-right: 12px;
+}
+
 
 ::ng-deep .p-toast-top-right {
   top: 60px;

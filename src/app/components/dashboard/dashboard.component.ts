@@ -1,4 +1,3 @@
-import { SharedService } from './../../services/shared.service';
 import { Component, HostListener } from '@angular/core';
 import { FormGroup, FormControl, Validators, AbstractControl } from '@angular/forms';
 import { MenuItem, MessageService } from 'primeng/api';
@@ -240,13 +239,20 @@ export class DashboardComponent {
   dialogTitle: string = "";
   isLinkAvailable: boolean = false;
   linkIndex: number = 0;
+  isLoading: boolean = false;
 
   UiColor = "red";
 
-  constructor(private sharedService: SharedService, private api: ApiService, private messageService: MessageService) { }
+  constructor(private api: ApiService, private messageService: MessageService) { }
 
   ngOnInit(): void {
     document.documentElement.style.setProperty('--primary-color', '#ffa500');
+    // this.messageService.add({ severity: 'info', detail: `Sending message`});
+    setTimeout(() => {
+    }, 20000);
+    setTimeout(() => {
+      this.isLoading = !false
+    }, 2000);
   }
 
   windowReload(): void {
@@ -283,7 +289,8 @@ export class DashboardComponent {
 
   onFormSubmit(): void {
     if (this.form.valid) {
-      this.sharedService.isLoading.next(true);
+      this.messageService.add({ severity: 'info', detail: `Sending message` });
+      this.isLoading = true;
       const payload: contactDetails = {
         name: (this.form?.value?.name)?.trim().length ? (this.form.value.name).trim() : "",
         mobileNumber: (this.form?.value?.mobileNumber)?.trim().length ? (this.form.value.mobileNumber).trim() : "",
@@ -293,13 +300,13 @@ export class DashboardComponent {
       };
       this.subs = this.api.sendContactDetails(payload).subscribe({
         next: (res: any) => {
-          this.sharedService.isLoading.next(false);
+          this.isLoading = false;
           this.form.reset();
           // console.log(">>> res", res);
           this.messageService.add({ severity: 'success', detail: `I've got your details, will reach you out shortly` });
         },
         error: (e: any) => {
-          this.sharedService.isLoading.next(false);
+          this.isLoading = false;
           console.log("Error log >>>", e);
           this.messageService.add({ severity: 'error', detail: 'Something went wrong' });
         },

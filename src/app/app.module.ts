@@ -8,7 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import { BrowserAnimationsModule, provideAnimations } from '@angular/platform-browser/animations';
-import { LoaderComponent } from './components/loader/loader.component';
+
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { DialogModule } from 'primeng/dialog';
 import { SpeedDialModule } from 'primeng/speeddial';
@@ -22,7 +22,6 @@ import { ProgressSpinnerModule } from 'primeng/progressspinner';
 @NgModule({
   declarations: [
     AppComponent,
-    LoaderComponent,
     DashboardComponent,
   ],
   imports: [
